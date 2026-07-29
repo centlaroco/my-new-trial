@@ -1,20 +1,26 @@
+import { NavLink } from "react-router";
 
 export function Header() {
   return (
-    <header className=" bg-white">
-      <div className='max-w-7xl mx-auto flex items-center justify-between drop-shadow-lg rounded-xl px-6 py-4'>
+    <header className="bg-white shadow-md shadow-gray-300">
+      <div className='max-w-7xl  mx-auto flex items-center justify-between  px-6 py-4'>
         <div className='flex align-center gap-3 '>
-          <span className="cursor-pointer flex content-center justify-center font-bold bg-green-700 text-white px-3 py-2 rounded-2xl shadow-md shadow-green-700/50 text-2xl  ">VL</span>
+          <NavLink to="/" className="cursor-pointer flex content-center justify-center font-bold bg-green-700 text-white px-3 py-2 rounded-2xl shadow-md shadow-green-700/50 text-2xl  ">VL</NavLink>
           <div className='flex flex-col gap-1 '>
             <h1 className='font-bold text-xl'>Vincent Laroco</h1>
-            <small className='text-gray-500 text-sm'>BSIT 3D</small>
+            <small className='text-gray-500 text-sm font-semibold'>BSIT 3D</small>
           </div>
         </div>
 
-        <div className='flex items-center gap-3'>
-          <input placeholder="Customer name (optional)" className='border border-gray-300 w-65 px-3 py-2 rounded-lg'></input>
-          <button id="darkmode" className='cursor-pointer bg-green-700 px-3 py-2 rounded-lg shadow-md shadow-green-700/40 text-white text-md font-semibold  '>Download PDF</button>
-        </div>
+        <nav className='flex gap-7 items-center text-gray-600 font-semibold text-md' >
+          <NavLink to="/" >Home</NavLink>
+          <NavLink to="/">About</NavLink>
+          <NavLink to="/">Projects</NavLink>
+        </nav>  
+
+        <NavLink to="/">
+          <button id="darkmode" className='cursor-pointer bg-green-700 hover:bg-gray-600 px-5 py-2 rounded-full shadow-md shadow-green-700/40 text-white text-md font-semibold  '>Services</button>
+        </NavLink>
       </div>
 
     </header>
