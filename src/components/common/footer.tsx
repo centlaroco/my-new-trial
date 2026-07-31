@@ -1,9 +1,8 @@
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
-import { delay } from "motion";
-import {facebook} from "@/assets/icons/facebook.png";
-import {insta} from "@/assets/icons/instagram.png";
-import {github} from "@/assets/icons/github.png";
+import facebook from "@/assets/icons/facebook.png";
+import insta from "@/assets/icons/instagram.png";
+import github from "@/assets/icons/github.png";
 
 export function Footer() {
   return (
