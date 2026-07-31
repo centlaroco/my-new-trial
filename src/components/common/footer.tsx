@@ -1,6 +1,9 @@
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
 import { delay } from "motion";
+import {facebook} from "@/assets/icons/facebook.png";
+import {insta} from "@/assets/icons/instagram.png";
+import {github} from "@/assets/icons/github.png";
 
 export function Footer() {
   return (
@@ -18,9 +21,9 @@ export function Footer() {
           </div>
 
           <div className="flex gap-3">
-            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.7 }} href="https://www.facebook.com/vincentlaroco" target="_blank"><img src="src\assets\icons\facebook.png" alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
-            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.8 }} href="https://www.instagram.com/vinceelaroco/" target="_blank"><img src="src\assets\icons\instagram.png" alt="insta" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
-            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.9 }} href="https://github.com/centlaroco" target="_blank"><img src="src\assets\icons\github.png" alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
+            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.7 }} href="https://www.facebook.com/vincentlaroco" target="_blank"><img src={facebook} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
+            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.8 }} href="https://www.instagram.com/vinceelaroco/" target="_blank"><img src={insta} alt="insta" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
+            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.9 }} href="https://github.com/centlaroco" target="_blank"><img src={github} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
           </div>
         </div>
 

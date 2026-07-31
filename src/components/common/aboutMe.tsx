@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import profile from '@/assets/hero.png';
+import profile from '@/assets/profile.jpg';
 
 export function AboutMe() {
     return (
