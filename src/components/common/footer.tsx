@@ -20,24 +20,30 @@ export function Footer() {
           </div>
 
           <div className="flex gap-3">
-            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.7 }} href="https://www.facebook.com/vincentlaroco" target="_blank"><img src={facebook} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
-            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.8 }} href="https://www.instagram.com/vinceelaroco/" target="_blank"><img src={insta} alt="insta" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
-            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.9 }} href="https://github.com/centlaroco" target="_blank"><img src={github} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" /></motion.a>
+            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.7 }} href="https://www.facebook.com/vincentlaroco" target="_blank">
+              <img src={facebook} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" />
+            </motion.a>
+            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.8 }} href="https://www.instagram.com/vinceelaroco/" target="_blank">
+              <img src={insta} alt="insta" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" />
+            </motion.a>
+            <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.9 }} href="https://github.com/centlaroco" target="_blank">
+              <img src={github} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" />
+            </motion.a>
           </div>
         </div>
 
         <div className="flex flex-col gap-4">
           <h3 className="font-bold text-lg">Navigation</h3>
-          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay:0.2 }} >
+          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay: 0.2 }} >
             <NavLink to="/" className="text-gray-600 hover:text-green-700">Home</NavLink>
           </motion.div>
-          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, delay:0.3 }} >
+          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, delay: 0.3 }} >
             <NavLink to="/about" className="text-gray-600 hover:text-green-700">About</NavLink>
 
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.7, delay:0.4 }} >
-                      <NavLink to="/projects" className="text-gray-600 hover:text-green-700">Projects</NavLink>
+          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.7, delay: 0.4 }} >
+            <NavLink to="/projects" className="text-gray-600 hover:text-green-700">Projects</NavLink>
 
           </motion.div>
         </div>
@@ -68,7 +74,6 @@ export function Footer() {
         </div>
 
       </div>
-
 
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

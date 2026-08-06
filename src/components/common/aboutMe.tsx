@@ -6,7 +6,7 @@ import profile from '@/assets/profile.jpg';
 export function AboutMe() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
-            <div className='grid grid-cols-2 border-b '>
+            <div className='grid grid-cols-2 border-b border-gray-300 '>
                 <div className=''>
                     <h1 className='font-bold text-3xl p-3'>ABout me</h1>
                     <motion.img
@@ -36,6 +36,10 @@ export function AboutMe() {
                     
                 </div>
             </div>
+
+            {/*  */}
+            {/*  */}
+            {/*  */}
         </div>
 
     );

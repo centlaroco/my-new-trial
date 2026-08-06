@@ -1,17 +1,21 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router";
 import '@/styles/global.css';
-import HomePage from '@/pages/home.tsx';
-import About from '@/pages/about.tsx';
+
+import Layout from "@/pages/guest/layyout"
+import Homepage from "@/pages/guest/home"
+import Aboutpage from "@/pages/guest/about";
+
 
 
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path='/about' element={<About/>} />
-      
+      <Route element={<Layout/>}>
+      <Route path="/" element={<Homepage />} />
+      <Route path='/about' element={<Aboutpage/>} />
+      </Route>
     </Routes>
   </BrowserRouter>,
 )

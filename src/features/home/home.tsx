@@ -1,20 +1,20 @@
-import { Header } from '@/components/common/header';
 import { Banner } from '@/components/common/banner';
 import { Card } from '@/components/ui/card'
-import { Footer } from '@/components/common/footer';
+import { AboutMe } from "@/components/common/aboutMe";
 import { motion } from 'motion/react';
 import { GitHubCalendar } from 'react-github-calendar';
-import { AboutMe } from '@/components/common/aboutMe';
+
 
 export default function HomePage() {
 
   return (
     <>
-      <Header />
       <main className='flex-1'>
         <Banner />
-        <AboutMe />
+        <AboutMe/>
+
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 ">
+
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6 }}>
             <Card title="LLCCES" description="2012-2018" buttonLabel="Graduated" buttonVariant="primary" />
           </motion.div>
@@ -24,7 +24,7 @@ export default function HomePage() {
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }}>
 
-            <Card title="Cordova Public College" description="2024-Present" buttonLabel="Currenty" buttonVariant="primary" />
+            <Card title="Cordova Public College" description="2024-Present" buttonLabel="Currently" buttonVariant="primary" />
           </motion.div>
         </section>
         <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
@@ -46,7 +46,6 @@ export default function HomePage() {
         </section>
 
       </main>
-      <Footer />
     </>
   )
 }
