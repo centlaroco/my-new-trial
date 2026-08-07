@@ -36,10 +36,6 @@ export function AboutMe() {
                     
                 </div>
             </div>
-
-            {/*  */}
-            {/*  */}
-            {/*  */}
         </div>
 
     );
