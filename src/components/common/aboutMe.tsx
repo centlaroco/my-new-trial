@@ -6,9 +6,9 @@ import profile from '@/assets/profile.jpg';
 export function AboutMe() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
-            <div className='grid grid-cols-2 border-b border-gray-300 '>
-                <div className=''>
-                    <h1 className='font-bold text-3xl p-3'>ABout me</h1>
+            <div className='grid grid-cols-1 md:grid-cols-2 border-b border-gray-300 border-b border-gray-300 '>
+                <div className='p-3 flex flex-col items-center md:items-start'>
+                    <h1 className='font-bold text-3xl p-3'>About me</h1>
                     <motion.img
                         src={profile}
                         alt="profile yarn"

@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <main className='flex-1'>
         <Banner />
-        <AboutMe/>
+        <AboutMe />
 
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 ">
 
@@ -28,20 +28,18 @@ export default function HomePage() {
           </motion.div>
         </section>
         <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
-          <div className='rounded-xl relative p-4 flex justify-center'>
-            <div className=' absolute left-4 top-0'>
-              <p>GitHub </p>
-            </div>
-            <div className='absolute right-4 top-0'>
-              <a href="https://github.com/centlaroco" target="_blank" className="font-semibold text-green-700 underline-offset-4 transition-colors duration-200 hover:text-green-800 hover:underline"
-              >
+          <div className='rounded-xl relative p-4 pt-12'> {/* give extra top padding so header doesn't overlap content */}
+            <div className='absolute inset-x-4 top-0 flex justify-between items-center'>
+              <p className='font-medium'>GitHub</p> <a href='https://github.com/centlaroco' target='_blank' rel='noopener noreferrer' className='font-semibold text-green-700 underline-offset-4 transition-colors duration-200 hover:text-green-800 hover:underline' >
                 Centlaroco &#8594;
               </a>
             </div>
-            <GitHubCalendar
-              username="centlaroco"
-              className="bg-gray-100 border border-gray-300 rounded-xl shadow-sm px-4 py-3"
-            />
+            <div className='flex justify-center'>
+              <GitHubCalendar
+                username='centlaroco'
+                className='bg-gray-100 border border-gray-300 rounded-xl shadow-sm px-4 py-3'
+              />
+            </div>
           </div>
         </section>
 

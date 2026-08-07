@@ -2,9 +2,11 @@ import { NavLink } from "react-router";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 
+
+
 export function Header() {
   return (
-    <header className="bg-white shadow-md shadow-gray-300">
+    <header className="bg-white">
       <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 px-6 py-4">
         <div className="flex items-center gap-3">
           <motion.div initial={{ opacity: -5, x: -10 }} animate={{ opacity: 1, x: 1 }} transition={{ duration: 0.4 }}>
@@ -24,10 +26,10 @@ export function Header() {
 
         <motion.div initial={{ opacity: 0, x: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} >
           <Button><a href="/Resume.pdf" download> Download Resume</a></Button>
-
         </motion.div>
 
       </div>
+      
     </header>
   );
 }
