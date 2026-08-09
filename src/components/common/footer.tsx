@@ -21,13 +21,13 @@ export function Footer() {
 
           <div className="flex gap-3">
             <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.7 }} href="https://www.facebook.com/vincentlaroco" target="_blank">
-              <img src={facebook} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" />
+              <img src={facebook} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-300 hover:scale-110 transition" />
             </motion.a>
             <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.8 }} href="https://www.instagram.com/vinceelaroco/" target="_blank">
-              <img src={insta} alt="insta" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" />
+              <img src={insta} alt="insta" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-300 hover:scale-110 transition" />
             </motion.a>
             <motion.a initial={{ opacity: -5, y: 10 }} animate={{ opacity: 1, y: 1 }} transition={{ duration: 0.9 }} href="https://github.com/centlaroco" target="_blank">
-              <img src={github} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-200 hover:scale-110 transition" />
+              <img src={github} alt="Facebook" className="w-10 h-10 rounded-full border border-gray-400 bg-gray-100 p-2 hover:bg-gray-300 hover:scale-110 transition" />
             </motion.a>
           </div>
         </div>
@@ -51,7 +51,7 @@ export function Footer() {
         <div className="space-y-4">
           <h3 className="font-bold text-lg">Contact</h3>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5 }} className="flex items-center gap-4 border border-gray-300 bg-gray-100 rounded-xl shadow-md p-4">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5 }} className="flex items-center gap-4 border border-gray-300 bg-gray-50 rounded-xl shadow-md p-4">
             <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center text-white text-xl">
               <img src="src\assets\icons\gmail.png" alt="" className="p-3" />
             </div>
@@ -61,7 +61,7 @@ export function Footer() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: -10, y: -1 }} animate={{ opacity: 1, y: -5 }} transition={{ duration: 0.6, delay: 0.4 }} className="flex items-center gap-4 border border-gray-300  bg-gray-100 rounded-xl shadow-md xl p-4">
+          <motion.div initial={{ opacity: -10, y: -1 }} animate={{ opacity: 1, y: -5 }} transition={{ duration: 0.6, delay: 0.4 }} className="flex items-center gap-4 border border-gray-300  bg-gray-50 rounded-xl shadow-md xl p-4">
             <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center text-white text-xl">
               <img src="src\assets\icons\viber.png" alt="" className="p-3 " />
 

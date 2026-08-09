@@ -3,7 +3,6 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 
 
-
 export function Header() {
   return (
     <header className="bg-white">

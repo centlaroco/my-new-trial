@@ -1,12 +1,10 @@
-import React from "react";
-import { cn } from "@/lib/cn";
 import  {motion}  from "motion/react";
 import star from "@/assets/star ka hey.png"
 
 export function Banner() {
     return (
-        <div className="bg-green-100 border-t-2 border-b-2 border-green-700 ">                
-            <div className="max-w-7xl mx-auto px-6 py-20 relative">
+        <div className="bg-green-100 border-t-2 border-b-2 border-green-700  ">                
+            <div className="max-w-7xl mx-auto px-6 py-20 relative overflow-visible">
 
                 <motion.img
                     src={star}
@@ -16,13 +14,13 @@ export function Banner() {
                 />
                 <motion.img
                     src={star}
-                    className="absolute left-1/1 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2  md:h-40 md:w-40"
+                    className="absolute left-1/2 top-1/2 h-28 w-28 sm:h-36 sm:w-36 md:h-40 md:w-40 -translate-x-1/2 -translate-y-1/2"
                     animate={{ x: [0, 12, -8, 0], y: [0, -10, 6, 0] }}
                     transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 />
                 <motion.img
                     src={star}
-                    className="absolute left-1/3 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 md:h-20 md:w-20"
+                    className="absolute left-[33%] top-1/2 h-24 w-24 sm:h-32 sm:w-32 md:h-20 md:w-20 -translate-x-1/2 -translate-y-1/2"
                     animate={{ x: [0, 12, -8, 0], y: [0, -10, 6, 0] }}
                     transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                 />
