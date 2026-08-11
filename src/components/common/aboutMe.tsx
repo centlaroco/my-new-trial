@@ -5,9 +5,9 @@ import profile from '@/assets/profile.jpg';
 
 export function AboutMe() {
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
-            <div className='grid grid-cols-1 md:grid-cols-2 border-b border-gray-300  items-center '>
-                <div className='cols-span-1 p-3 md:items-start'>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2"> 
+            <div className='grid grid-cols-1 md:grid-cols-2 border-b pb-8 border-gray-300 items-center '>
+                <div className='cols-span-1 p-3'>
                     <h1 className='font-bold text-3xl pb-3'>About me</h1>
                     <motion.img
                         src={profile}
@@ -16,15 +16,14 @@ export function AboutMe() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.6, ease: 'easeOut' }}
-                        className='h-100 shadow-lg shadow-gray-700/100'
+                        className='h-auto w-100 shadow-lg shadow-gray-700/100'
                     />
                 </div>
                 <div className='cols-span-2 p-2 text-gray-700 text-lg  leading-loose '>
                     <motion.div initial={{ opacity: -15, y: 1 }} animate={{ opacity: 1, y: 20 }}  className='bg-gray-100 border border-gray-200 px-5 py-3 rounded-xl shadow-md'>
                         Hi, I’m Vincent Laroco - a passionate and curious individual with a growing interest in the
                         world of technology. I am currently a 3rd Year College at Cordova Public College
-                        I’m driven by the desire to solve real-world problems through tech. Whether I’m exploring programming
-                        or understanding how data flows across systems, I’m always excited to gain new knowledge and push
+                        I’m driven by the desire to solve real-world problems through tech. I’m always excited to gain new knowledge and push
                         my skills further every day.
                     </motion.div>
 
