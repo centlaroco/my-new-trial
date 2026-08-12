@@ -3,7 +3,7 @@ import star from "@/assets/star ka hey.png"
 
 export function Banner() {
     return (
-        <div className="bg-green-100 border-t-2 border-b-2 border-green-700  ">                
+        <div className="bg-green-100 border-t-2 border-b-2 border-green-700">                
             <div className="max-w-7xl mx-auto px-6 py-20 relative overflow-visible">
 
                 <motion.img

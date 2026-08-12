@@ -20,7 +20,7 @@ export function AboutMe() {
                     />
                 </div>
                 <div className='cols-span-2 p-2 text-gray-700 text-lg  leading-loose '>
-                    <motion.div initial={{ opacity: -15, y: 1 }} animate={{ opacity: 1, y: 20 }}  className='bg-gray-100 border border-gray-200 px-5 py-3 rounded-xl shadow-md'>
+                    <motion.div initial={{ opacity: -15, y: 1 }} animate={{ opacity: 1, y: 20 }}  className='bg-white border border-gray-200 px-5 py-3 rounded-xl shadow-md'>
                         Hi, I’m Vincent Laroco - a passionate and curious individual with a growing interest in the
                         world of technology. I am currently a 3rd Year College at Cordova Public College
                         I’m driven by the desire to solve real-world problems through tech. I’m always excited to gain new knowledge and push

@@ -45,7 +45,7 @@ export function Footer() {
           <h3 className="font-bold text-lg">Contact</h3>
 
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5,delay:0.1 }} className="flex items-center gap-4 border border-gray-300 bg-gray-50 rounded-xl shadow-md p-4">
-            <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center text-white text-xl">
+            <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center ">
               <img src="src\assets\icons\gmail.png" alt="" className="p-3" />
             </div>
             <div>
@@ -55,12 +55,12 @@ export function Footer() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6, delay:0.2}} className="flex items-center gap-4 border border-gray-300  bg-gray-50 rounded-xl shadow-md xl p-4">
-            <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center text-white text-xl">
+            <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center">
               <img src="src\assets\icons\viber.png" alt="" className="p-3 " />
 
             </div>
             <div>
-              <p className="text-sm text-gray-500">Phone</p>
+              <p className="text-md  text-gray-500">Phone</p>
               <p className="font-semibold">+63 960 422 8010</p>
             </div>
           </motion.div>
