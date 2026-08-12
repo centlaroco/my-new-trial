@@ -5,7 +5,7 @@ import profile from '@/assets/profile.jpg';
 
 export function AboutMe() {
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2"> 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
             <div className='grid grid-cols-1 md:grid-cols-2 border-b pb-8 border-gray-300 items-center '>
                 <div className='cols-span-1 p-3'>
                     <h1 className='font-bold text-3xl pb-3'>About me</h1>
@@ -20,19 +20,17 @@ export function AboutMe() {
                     />
                 </div>
                 <div className='cols-span-2 p-2 text-gray-700 text-lg  leading-loose '>
-                    <motion.div initial={{ opacity: -15, y: 1 }} animate={{ opacity: 1, y: 20 }}  className='bg-white border border-gray-200 px-5 py-3 rounded-xl shadow-md'>
+                    <motion.div initial={{ opacity: -15, y: 1 }} animate={{ opacity: 1, y: 20 }} className='bg-white border border-gray-200 px-5 py-3 rounded-xl shadow-md'>
                         Hi, I’m Vincent Laroco - a passionate and curious individual with a growing interest in the
                         world of technology. I am currently a 3rd Year College at Cordova Public College
                         I’m driven by the desire to solve real-world problems through tech. I’m always excited to gain new knowledge and push
                         my skills further every day.
                     </motion.div>
 
-                    <motion.div initial={{opacity:10, y:1}} animate={{opacity:1, y:-10}} transition={{duration:0.2}}>
-                        <NavLink to="/about">
-                        <Button className="mt-15 w-full">About Me</Button>
-                    </NavLink>
+                    <motion.div initial={{ opacity: 10, y: 1 }} animate={{ opacity: 1, y: -10 }} transition={{ duration: 0.2 }}>
+                        <Button className="mt-15 w-full">Babag 1, LLC</Button>
                     </motion.div>
-                    
+
                 </div>
             </div>
         </div>
