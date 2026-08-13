@@ -4,9 +4,9 @@ import profile from '@/assets/profile.jpg';
 
 export function AboutMe() {
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-            <div className='grid grid-cols-1 md:grid-cols-2 border-b pb-8 border-gray-300 items-center '>
-                <div className='cols-span-1 p-3'>
+        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 px-4">
+            <div className='grid grid-cols-1 md:grid-cols-2 pb-3 items-center '>
+                <div className='cols-span-1 p-3 '>
                     <h1 className='font-bold text-3xl pb-3'>About me</h1>
                     <motion.img
                         src={profile}
@@ -19,7 +19,7 @@ export function AboutMe() {
                     />
                 </div>
 
-                <div className='cols-span-2 p-2 text-gray-700 text-lg  leading-loose '>
+                <div className='cols-span-1 p-2 text-gray-700 text-lg leading-loose '>
                     <motion.div initial={{ opacity: -15, y: 1 }} animate={{ opacity: 1, y: 20 }} className='bg-white border border-gray-200 px-5 py-3 rounded-xl shadow-md'>
                         Hi, I’m Vincent Laroco - a passionate and curious individual with a growing interest in the
                         world of technology. I am currently a 3rd Year College at Cordova Public College

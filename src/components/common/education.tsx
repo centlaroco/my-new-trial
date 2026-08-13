@@ -9,7 +9,7 @@ import LLCCES from '@/assets/LLCCES_logo.png';
 export function Education() {
     return (
         <>
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 ">
                 <h2 className="font-bold text-3xl p-3">Education</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-3">
                     <motion.div className="h-full" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6 }}>
