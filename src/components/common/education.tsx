@@ -9,9 +9,9 @@ import LLCCES from '@/assets/LLCCES_logo.png';
 export function Education() {
     return (
         <>
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 ">
-                <h2 className="font-bold text-3xl p-3">Education</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-3">
+            <section className="max-w-7xl mx-auto lg:px-8 p-4">
+                <h2 className="font-bold text-3xl py-3">Education</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
                     <motion.div className="h-full" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6 }}>
                         <Card title="Bachelor of Information Technology" schoolDescription="Cordova Public College" buttonLabel="Currently" description="Pursuing a degree in Information Technology." buttonVariant="secondary" logo={CPC} logoAlt="Cordova Public College logo" />
                     </motion.div>
