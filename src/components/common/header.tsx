@@ -20,6 +20,7 @@ export function Header() {
         <motion.nav initial={{ opacity: 1, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} className="flex flex-wrap items-center gap-7 text-gray-600 font-semibold text-md">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
+          <NavLink to="/skills">Skills</NavLink>
         </motion.nav>
 
         <motion.div initial={{ opacity: 0, x: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} >

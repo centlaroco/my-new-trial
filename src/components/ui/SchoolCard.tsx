@@ -10,7 +10,7 @@ type CardProps = {
   logoAlt: string;
 };
 
-export function Card({ title, schoolDescription, description, buttonLabel, buttonVariant = "primary", logo, logoAlt = "logo", }: CardProps) {
+export function SchoolCard({ title, schoolDescription, description, buttonLabel, buttonVariant = "primary", logo, logoAlt = "logo", }: CardProps) {
   return (
     <div className="h-full flex flex-col justify-between border border-gray-200 rounded-lg p-6 bg-white hover:bg-gray-50 transition-colors">
       <div className="flex items-center justify-between">

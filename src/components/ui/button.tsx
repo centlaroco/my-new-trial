@@ -9,7 +9,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export function Button({ children, variant = "primary", className = "", ...props }: ButtonProps) {
   const variantStyles = {
     primary: "bg-green-700 text-white hover:bg-green-600",
-    secondary: "bg-white text-gray-900 border border-gray-300 hover:bg-gray-50",
+    secondary: "bg-white text-gray-900 border border-gray-300 hover:bg-gray-50 ",
     tertiary: "bg-transparent text-blue-600 hover:underline px-0 py-0 rounded-none",
   };
 

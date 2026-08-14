@@ -1,9 +1,10 @@
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
-import facebook from "@/assets/icons/facebook.png";
-import insta from "@/assets/icons/instagram.png";
-import github from "@/assets/icons/github.png";
-
+import facebook from "@/assets/icons_img/facebook.png";
+import insta from "@/assets/icons_img/instagram.png";
+import github from "@/assets/icons_img/github.png";
+import gmail from "@/assets/icons_img/gmail.png";
+import viber from "@/assets/icons_img/viber.png";
 export function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200 mt-auto">
@@ -34,14 +35,17 @@ export function Footer() {
           <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, delay: 0.3 }} >
             <NavLink to="/about" className="text-gray-600 hover:text-green-700">About</NavLink>
           </motion.div>
+          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, delay: 0.3 }} >
+            <NavLink to="/skills" className= "text-gray-600 hover:text-green-700">SKills</NavLink>
+          </motion.div>
         </div>
 
         <div className="space-y-4">
           <h3 className="font-bold text-lg">Contact</h3>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5,delay:0.1 }} className="flex items-center gap-4 border border-gray-300 bg-gray-50 rounded-xl shadow-md p-4">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay: 0.1 }} className="flex items-center gap-4 border border-gray-300 bg-gray-50 rounded-xl shadow-md p-4">
             <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center ">
-              <img src="src\assets\icons\gmail.png" alt="" className="p-3" />
+              <img src={gmail} alt="" className="p-3" />
             </div>
             <div>
               <p className="text-sm text-gray-500">Email</p>
@@ -49,9 +53,9 @@ export function Footer() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6, delay:0.2}} className="flex items-center gap-4 border border-gray-300  bg-gray-50 rounded-xl shadow-md xl p-4">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6, delay: 0.2 }} className="flex items-center gap-4 border border-gray-300  bg-gray-50 rounded-xl shadow-md xl p-4">
             <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center">
-              <img src="src\assets\icons\viber.png" alt="" className="p-3 " />
+              <img src={viber} alt="" className="p-3 " />
 
             </div>
             <div>
