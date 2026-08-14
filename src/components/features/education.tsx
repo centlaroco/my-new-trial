@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Card } from '@/components/ui/card';
+import { Card } from '@/components/ui/SchoolCard';
 import JHS from '@/assets/jhsBabag_logo.png';
 import CPC from '@/assets/cpc_logo.png';
 import SHS from '@/assets/shsBNHS_logo.png';

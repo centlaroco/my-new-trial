@@ -4,8 +4,8 @@ import profile from '@/assets/profile.jpg';
 
 export function AboutMe() {
     return (
-        <div className="max-w-7xl mx-auto lg:px-8 px-4">
-            <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-2 '>
+        <div className="max-w-7xl mx-auto lg:px-8  px-4">
+            <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-2'>
                 <div className='cols-span-1 '>
                     <h1 className='font-bold text-3xl pb-3 pt-5'>About me</h1>
                     <motion.img

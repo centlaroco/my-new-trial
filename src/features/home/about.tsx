@@ -1,5 +1,5 @@
-import { AboutMe } from "@/components/common/aboutMe";
-import { Education } from '@/components/common/education';
+import { AboutMe } from "@/components/features/aboutMe";
+import { Education } from '@/components/features/education';
 export default function About() {
     return (
         <>

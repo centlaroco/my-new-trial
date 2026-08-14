@@ -1,7 +1,7 @@
-import { Banner } from '@/components/common/banner';
-import { AboutMe } from "@/components/common/aboutMe";
+import { Banner } from '@/components/features/banner';
+import { AboutMe } from "@/components/features/aboutMe";
 import { GitHubCalendar } from 'react-github-calendar';
-import { Education } from '@/components/common/education';
+import { Education } from '@/components/features/education';
 
 export default function HomePage() {
 
