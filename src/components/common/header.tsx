@@ -8,7 +8,7 @@ export function Header() {
 
 
   return (
-    <header className="bg-white sticky top-0 z-40">
+    <header className="bg-white sticky top-0 z-40 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 py-4">
         <div className="flex items-center gap-3">
           <motion.div initial={{ opacity: -5, x: -10 }} animate={{ opacity: 1, x: 1 }} transition={{ duration: 0.4 }}>

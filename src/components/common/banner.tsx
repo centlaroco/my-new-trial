@@ -5,7 +5,7 @@ import star from "@/assets/star ka hey.png";
 
 export function Banner() {
   return (
-    <section className="bg-green-100 border-t-2 border-b-2 border-green-700 overflow-hidden">
+    <section className="bg-green-100 border-b-5 border-green-700 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-20 relative overflow-visible">
         <motion.img
           src={star}
@@ -45,10 +45,10 @@ export function Banner() {
           >
             I&apos;m
             <div className="flex flex-col md:flex-row md:items-center md:gap-2">
-                 <span className="block text-green-900">Vincent</span>
-            <span className="block text-slate-700 ">Laroco</span>
+              <span className="block text-green-900">Vincent</span>
+              <span className="block text-slate-700 ">Laroco</span>
             </div>
-           
+
           </motion.h1>
 
           <motion.p
@@ -67,7 +67,7 @@ export function Banner() {
             className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-center md:justify-start"
           >
             <NavLink to="/about">
-                <Button>About me</Button>
+              <Button>About me</Button>
             </NavLink>
           </motion.div>
         </div>
