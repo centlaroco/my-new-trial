@@ -72,7 +72,6 @@ export function Skills({ title = 'Tech Stack', items = techstack }: SkillsProps)
                             <div className={`h-12 w-12  ${item.color}`}>
                                 <img src={item.icon}></img>
                             </div>
-
                             <h3 className='text-lg font-semibold text-gray-900'>{item.name}</h3>
                         </div>
                     </motion.div>
