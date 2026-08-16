@@ -42,7 +42,6 @@ export function Footer() {
 
         <div className="space-y-4">
           <h3 className="font-bold text-lg">Contact</h3>
-
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay: 0.1 }} className="flex items-center gap-4 border border-gray-300 bg-gray-50 rounded-xl shadow-md p-4">
             <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center ">
               <img src={gmail} alt="" className="p-3" />
@@ -53,7 +52,7 @@ export function Footer() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6, delay: 0.2 }} className="flex items-center gap-4 border border-gray-300  bg-gray-50 rounded-xl shadow-md xl p-4">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6, delay: 0.2 }} className="flex items-center gap-4 border border-gray-300  bg-gray-50 rounded-xl shadow-md p-4">
             <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center">
               <img src={viber} alt="" className="p-3 " />
 
