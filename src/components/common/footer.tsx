@@ -7,7 +7,7 @@ import gmail from "@/assets/icons_img/gmail.png";
 import viber from "@/assets/icons_img/viber.png";
 export function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 mt-auto">
+    <footer className="bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto  px-4 lg:px-8 py-12  grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="space-y-6">
           <div className="flex items-center gap-3">
