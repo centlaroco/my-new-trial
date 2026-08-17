@@ -33,37 +33,23 @@ export function Banner() {
         />
 
         <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center md:items-start md:text-left">
-          <span className="mb-4 inline-block rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-green-800 shadow-sm backdrop-blur-sm">
+          <span className="mb-4 inline-block rounded-full bg-white/80 px-4 py-2 text-sm font-semibold text-green-800 shadow-sm">
             Sup Yo!
           </span>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl font-bold tracking-tight text-slate-700 sm:text-5xl md:text-6xl"
-          >
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="text-4xl font-bold tracking-tight text-slate-700 sm:text-5xl md:text-6xl">
             I&apos;m
             <div className="flex flex-col md:flex-row md:items-center md:gap-2">
               <span className="block text-green-900">Vincent</span>
               <span className="block text-slate-700 ">Laroco</span>
             </div>
-
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}
-            className="mt-6 max-w-2xl text-base text-slate-700 sm:text-lg"
-          >
+          <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}className="mt-6 max-w-2xl text-base text-slate-700 sm:text-lg">
             I&apos;m a 3rd Year College student at Cordova Public COllege
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
+          <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.25, ease: "easeOut" }}
             className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-center md:justify-start"
           >
             <NavLink to="/about">

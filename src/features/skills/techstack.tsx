@@ -5,6 +5,7 @@ import javascript from '@/assets/icons_img/javascript.jpg';
 import nodejs from '@/assets/icons_img/nodejs.svg';
 import express from '@/assets/icons_img/express-js.png';
 import bootstrap from '@/assets/icons_img/bootstrap.svg';
+import mySQL from '@/assets/icons_img/mysql.png'
 import { motion } from 'motion/react';
 
 type TechStackItem = {
@@ -23,37 +24,42 @@ const techstack: TechStackItem[] = [
     {
         name: 'React',
         icon: react,
-        color: 'bg-white ',
+        color: 'bg-white '
     },
     {
         name: 'TypeScript',
         icon:  typescript,
-        color: 'bg-blue-100',
+        color: 'bg-white'
     },
     {
         name: 'Tailwind CSS',
         icon: tailwind,
-        color: 'bg-white',
+        color: 'bg-white'
     },
     {
         name: 'JavaScript',
         icon: javascript,
-        color: 'bg-purple-100',
+        color: 'bg-white'
     },
     {
         name: 'Node.js',
         icon: nodejs,
-        color: 'bg-white ',
+        color: 'bg-white '
     },
     {
         name: 'Express',
         icon: express,
-        color: 'bg-white ',
+        color: 'bg-white '
     },
     {
         name: 'BootStrap',
         icon: bootstrap,
-        color: 'bg-white',
+        color: 'bg-white'
+    },
+    {
+        name: 'MySQL',
+        icon: mySQL,
+        color: 'bg-white border border-gray-300'
     }
 ];
 
@@ -65,9 +71,9 @@ export function Skills({ title = 'Tech Stack', items = techstack }: SkillsProps)
                 <h2 className='pt-2 text-3xl font-bold text-gray-900'>{title}</h2>
             </div>
 
-            <div className='grid gap-4 grid-cols-2 lg:grid-cols-5 items-center'>
+            <div className='grid gap-4 grid-cols-2 md:grid-cols-5 items-center'>
                 {items.map((item) => (
-                    <motion.div initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}} key={item.name} className='rounded-2xl border border-gray-200 bg-white p-5 transition duration-200 hover:-translate-y-1 hover:shadow-md'>
+                    <motion.div initial={{opacity: 0, y: 20}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}} key={item.name} className='rounded-lg border border-gray-200 bg-white p-5 transition duration-200 hover:-translate-y-1 hover:shadow-md'>
                         <div className='flex items-center gap-4'>
                             <div className={`h-12 w-12  ${item.color}`}>
                                 <img src={item.icon}></img>
