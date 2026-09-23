@@ -9,7 +9,12 @@ export function Header() {
   const menu = () => {
     setTheMenu((o) => !o)
   }
-
+  const navlink = [
+    {name: 'Home', path: '/'},
+    {name: 'About', path: '/about'},
+    {name: 'Skills', path: '/skills'},
+    {name: 'Project', path: '/project'}
+  ]
   return (
     <header className="bg-white sticky top-0 z-40 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 lg:px-8 px-4 py-4">
@@ -24,9 +29,17 @@ export function Header() {
         </div>
 
         <motion.nav initial={{ opacity: 1, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} className="items-center hidden md:flex gap-8 text-gray-600 font-semibold text-md">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/skills">Skills</NavLink>
+          {navlink.map((nav) => (
+            <NavLink 
+            key={nav.path} 
+            to={nav.path} 
+            end={nav.path === '/'}
+            className={({ isActive }) => 
+            isActive ? 'text-green-700 font-bold transition' : 'text-gray-600 hover:text-green-700 transition'}>
+              {nav.name}
+            </NavLink>
+          ))}
+          
         </motion.nav>
 
         <motion.div initial={{ opacity: 0, x: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} className="hidden md:block" >
@@ -50,13 +63,16 @@ export function Header() {
       </div>
       {/* mobile menus */}
       {openMenu && (
-        <div className="fixed px-4 py-4 top-20 right-0 w-full bg-white shadow-md">
+        <div className="fixed px-4 py-4 top-20 right-0 w-full bg-white shadow-md md:hidden z-50">
 
           <motion.nav initial={{ opacity: 1, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} className="flex flex-col gap-5 text-gray-600 font-semibold text-md ">
-            <NavLink to="/" onClick={menu}>Home</NavLink>
-            <NavLink to="/about" onClick={menu}>About</NavLink>
-            <NavLink to="/skills" onClick={menu}>Skills</NavLink>
-            <Button><a href="/Resume.pdf" download> Download Resume</a></Button>
+            {navlink.map((nav) => (
+              <NavLink key={nav.path} to={nav.path} onClick={menu} className="hover:text-green-700 transition-all duration-300 ease-in-out">
+                {nav.name}
+              </NavLink>
+            ))}
+                        <Button><a href="/Resume.pdf" download> Download Resume</a></Button>
+
           </motion.nav>
 
         </div>)}
