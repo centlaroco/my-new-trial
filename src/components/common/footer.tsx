@@ -6,6 +6,13 @@ import github from "@/assets/icons_img/github.png";
 import gmail from "@/assets/icons_img/gmail.png";
 import viber from "@/assets/icons_img/viber.png";
 export function Footer() {
+
+  const navlink = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Skills', path: '/skills' },
+    { name: 'Project', path: '/project' }
+  ]
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto  px-4 lg:px-8 py-12  grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -29,15 +36,16 @@ export function Footer() {
 
         <div className="flex flex-col gap-4">
           <h3 className="font-bold text-lg">Navigation</h3>
-          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay: 0.2 }} >
-            <NavLink to="/" className="text-gray-600 hover:text-green-700">Home</NavLink>
+          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay: 0.2 }} className="flex flex-col space-y-5">
+            {navlink.map((nav) => (
+              <NavLink
+                key={nav.path}
+                to={nav.path}
+                end={nav.path === '/'}
+                className=" text-gray-600 hover:text-green-700">{nav.name}</NavLink>
+            ))}
           </motion.div>
-          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, delay: 0.3 }} >
-            <NavLink to="/about" className="text-gray-600 hover:text-green-700">About</NavLink>
-          </motion.div>
-          <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, delay: 0.3 }} >
-            <NavLink to="/skills" className= "text-gray-600 hover:text-green-700">SKills</NavLink>
-          </motion.div>
+
         </div>
 
         <div className="space-y-4">
