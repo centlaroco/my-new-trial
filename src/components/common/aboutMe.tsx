@@ -1,13 +1,14 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import profile from '@/assets/profile.jpg';
+import profile from '@/assets/profile2.jpg';
 
 export function AboutMe() {
     return (
         <section className="max-w-7xl mx-auto lg:px-8 px-4">
-            <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-5'>
+                                <h1 className='font-bold text-3xl md:pt-8'>About me</h1>
+
+            <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-8'>
                 <div className='cols-span-1 '>
-                    <h1 className='font-bold text-3xl md:pb-3 pt-5'>About me</h1>
                     <motion.img
                         src={profile}
                         alt="profile yarn"
@@ -15,7 +16,7 @@ export function AboutMe() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.6, ease: 'easeOut' }}
-                        className='h-auto w-100 shadow-lg shadow-gray-700/100 md:block hidden'
+                        className='h-auto w-100 shadow-lg shadow md:block hidden'
                     />
                 </div>
 

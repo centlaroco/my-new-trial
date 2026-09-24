@@ -3,7 +3,7 @@ import { AboutMe } from "@/components/common/aboutMe";
 import { GitHubCalendar } from 'react-github-calendar';
 import { Education } from '@/components/common/education';
 
-export default function HomePage() {
+export function HomePage() {
 
   return (
     <>

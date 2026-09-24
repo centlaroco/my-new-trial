@@ -65,7 +65,7 @@ const techstack: TechStackItem[] = [
 
 export function Skills({ title = 'Tech Stack', items = techstack }: SkillsProps) {
     return (
-        <section className='mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8'>
+        <section className='mx-auto max-w-7xl  px-4 py-16 sm:px-6 lg:px-8'>
             <div className='pb-3'>
                 <p className='text-sm font-semibold uppercase tracking-[0.2em] text-green-700'>Tools</p>
                 <h2 className='pt-2 text-3xl font-bold text-gray-900'>{title}</h2>

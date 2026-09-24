@@ -1,8 +1,8 @@
 import {Skills} from '@/features/skills/techstack';
-import { documentTitle }  from '@/components/ui/documentTItle';
+import { useDocumentTitle }  from '@/components/ui/title';
 
 export default function SkillsPage(){
-    documentTitle("Skills | Vincent")
+    useDocumentTitle("Skills | Vincent")
     return (
         <Skills/>
     )
