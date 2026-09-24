@@ -1,6 +1,6 @@
 import NotFoundPage from '@/components/common/notfound'
 
-export default function ProjectPage(){
+export function ProjectPage(){
     return(
         <NotFoundPage/>
     )
