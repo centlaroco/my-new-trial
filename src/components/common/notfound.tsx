@@ -1,5 +1,6 @@
-
+import { documentTitle } from "../ui/documentTItle";
 export default function NotFoundPage() {
+    documentTitle("404: not found")
     return (
         <div className='flex min-h-[50vh] items-center justify-center px-4'>
             <div className='w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-xl'>
