@@ -7,7 +7,7 @@ export function AboutMe() {
         <section className="max-w-7xl mx-auto lg:px-8 px-4">
             <h1 className='font-bold text-3xl py-5 '>About Me</h1>
 
-            <div className='grid grid-cols-2 items-center gap-8 '>
+            <div className='md:grid grid-cols-2 items-center gap-8 '>
 
                 <motion.img
                     src={profile}
